@@ -104,6 +104,46 @@ EXTRAS
   </head>
 
   <body>
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Titolo</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Inserisci la tua mail!</p>
+            <input
+              type="email"
+              id="inputEmail"
+              placeholder="inserire una mail"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -130,10 +170,10 @@ EXTRAS
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Saldi</a>
+              <a class="nav-link" href="#saldi">Saldi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Welcome Summer</a>
+              <a class="nav-link" href="#welcome">Welcome Summer</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Last Minute</a>
@@ -532,7 +572,12 @@ EXTRAS
 
     <footer class="bg-dark">
       <div class="text-center">
-        <a href="#" class="btn btn-outline-secondary btn-sm mt-5 mb-3"
+        <a
+          href="#"
+          id="btnContatti"
+          class="btn btn-outline-secondary btn-sm mt-5 mb-3"
+          data-bs-toggle="modal"
+          data-bs-target="#modal"
           >Contattaci</a
         >
         <p class="mb-0 text-light pb-5 fs-6">
