@@ -183,8 +183,24 @@ EXTRAS
     </div>
 
     <div class="container mt-3">
-      <p class="h3">Saldi</p>
-      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 gy-3">
+      <div class="d-flex justify-content-between align-items-start">
+        <p class="h3">Saldi</p>
+        <a
+          class="text-info text-decoration-none"
+          data-bs-toggle="collapse"
+          href="#saldi"
+          role="button"
+          aria-expanded="false"
+          aria-controls="saldi"
+        >
+          Nascondi sezione
+        </a>
+      </div>
+
+      <div
+        class="row row-cols-2 row-cols-md-3 row-cols-lg-4 gy-3 collapse"
+        id="saldi"
+      >
         <div class="col">
           <div class="card border-info mb-3">
             <img
@@ -257,8 +273,23 @@ EXTRAS
     </div>
 
     <div class="container mt-3">
-      <p class="h3">Welcome Summer</p>
-      <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 gy-3">
+      <div class="d-flex justify-content-between align-items-start">
+        <p class="h3">Welcome Summer</p>
+        <a
+          class="text-info text-decoration-none"
+          data-bs-toggle="collapse"
+          href="#welcome"
+          role="button"
+          aria-expanded="false"
+          aria-controls="welcome"
+        >
+          Nascondi sezione
+        </a>
+      </div>
+      <div
+        class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 gy-3 collapse"
+        id="welcome"
+      >
         <div class="col">
           <div class="card border-0 mb-3 shadow-lg">
             <img
@@ -515,5 +546,6 @@ EXTRAS
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
